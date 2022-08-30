@@ -15,7 +15,7 @@ router.post("/add", async (req, res) => {
   createUser(req, res);
 });
 
-router.get("/list", async (req, res) => {
+router.get("/list", verifyToken, async (req, res) => {
   getUserList(req, res);
 });
 

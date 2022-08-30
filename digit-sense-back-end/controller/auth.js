@@ -67,7 +67,7 @@ export const login = async (req, res) => {
     {
       _id: account._id,
       role: account.role,
-      fullName: `${account.firstName} ${account.lastName}`,
+      fullName: `${account.fullName}`,
     },
     process.env.TOKEN_SECRET
   );
